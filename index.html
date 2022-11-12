@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: blue;
+        }
+    </style>
+    <title>Homepage</title>
+</head>
+<body style="background-color: aqua;">
+    <header class="main_header">
+    <h1>Homepage</h1>
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="learnhtml.html">HTML</a></li>
+        <li><a href="learnCSS.html">CSS</a></li>
+        <li><a href="learnJS.html">JS</a></li>
+    </ul>
+    </header>
+    <main>
+        <section id="obecnosci">
+            <header><h2>Lista obecności</h2></header>
+            <p>01 11 2022 obecny</p>
+            <p>02 11 2022 obecny</p>
+            <p>03 11 2022 obecny</p>
+            <p>04 11 2022 obecny</p>
+            <p>05 11 2022 obecny</p>
+            <p>07 11 2022 obecny</p>
+            <p>09 11 2022 obecny</p>
+            <p>12 11 2022 obecny</p>
+        </section>
+        <section>
+            <header><h2>Notatki z kursu wtf</h2></header>
+           <p> Rozpoczynam kolejne podejście do tego kursu </p>
+        </section>
+        <section>
+            <h2>Testowanie znaczników</h2>
+            <p><b>przykładowy tekst </b></p>
+            <p><strong>przykładowy tekst </strong></p>
+            <p><em>przykładowy tekst </em></p>
+        </section>
+    </main>
+    <footer>Co Ten Frontend &copy</footer>
+    <h1 class="naglowek">Mój nagłówek</h1>
+    <button>PRZYCISK</button>
+    <a href="#obecnosci">obecności</a>
+<script>
+    alert("siema");
+document.querySelector("button").addEventListener("click",()=>{
+    if(document.querySelector(".naglowek").innerHTML=="Mój nagłówek"){
+        document.querySelector(".naglowek").innerHTML="klik, klik";
+    }else{
+        document.querySelector(".naglowek").innerHTML="Mój nagłówek";
+    }
+});
+
+
+</script>
+<script src="main.js"></script>
+</body>
+</html>
